@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yotsuba - Inscripción</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de ajustar la ruta según tu estructura de carpetas -->
+    <!-- Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+     <!-- Logo en la esquina superior izquierda -->
+     <div class="logo-container">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczOSeeqp05pIyr4cs0ozf-FXt2lwPgL16k0RZT-PI4MGKMRUcFyKAc7UwKcEeHQ0I7Fa0sWjNY2CdVc6VON02X1oYt0MFhc-thsLExw4bKXjbqGzZlasTBTfrUguDiwa-2lkoihZTV5I54K7GVZxfMgDv56u7J5j8ReAH6lR86TCw4nzEMn5o42VwK6-WjSL5jWZfoCcjF6dVN2Dx7V2RpRmfllKZUc4-f4Sl_3gKz_aBKYoUzath6R5EbHxqwG9hiVN21gyKLfSQlyF5hyuz2e33FUR2LL66KEoOr6HwdkkcvR6B9TNQBFWJupddOnP2WbNNGMk0OkrJZWlq0bDRgZK28RtskXWOJUgGt3h36gKn3PuOGzfdvnZcE9ZxNUVteJdxQDv_NZ4OxhCfGKlaz7msiK5F15Ye8MGt7LyTAEIjGevebx8Xs3vbuttJeA3t_qivfu61nu0AcOSMH3adXN7d1cZAsuq_AMOuARG7m1RgFUKUSg4e6GPCOq8-okEc4Xka4R89D3IoKlHwxQW3VeTOxwV1eKs6iBBetZMz86_-Z5g4dvG4zjSjesah5jZiLNB_aDHJm8DSEaH4gYManBBb3S3vkHvzC1cc3eBd5Odzm15VQ02VkO_j8Ioa0aa-uFPPRSniz5sqFZaJDpchsYX63yRsGB4_zLq6sLlEe9mYyC-oX7AJsnWftk7tQtrOIRBekMxiOYs0NmACVIowSabtvzkfdX_hetu3VuulNTyEEMjWBDBCSP77tuH9PbPr2S-pczUA76wu2ZMDKoZpUWyZANyyjbA_6MDIazGF4zKly5ahSlYiLdBS05Gk4xu272sMD-n2o5kfWdqTiC1650qhraz7EjJSKKrFG__sAn8uEYW7xzZb4z2UB5gU3daXkIuTDh5y4eK4rAuqTVlCvX5TYm4dcf15e9oelGaY7DZqEO2PjJLueVTxPPeynzaGn45UOTxWruEL9It5P4EX1Jw9JAWSZckAvN7hFC3ps_g5cxhJGWVFVOHMzrEcnGnPRWJq1uyz-yIJb7Knyq7Gy-cn4WM4nsSmWmLiGI=w367-h441-s-no-gm?authuser=2" alt="Logo Yotsuba" width="100" height="100">
+    </div>
+    <!-- Navbar -->
+    <header class="bg-success text-white text-center py-4">
+        <div class="container" data-aos="fade-down">
+            <h1>Yotsuba</h1>
+            <p>Bienvenido a Yotsuba - Tu portal de cursos de japonés</p>
+            <nav class="nav justify-content-center">
+                <a class="nav-link text-white" href="index.html">Inicio</a>
+                <a class="nav-link text-white" href="intro.html">Introducción</a>
+                <a class="nav-link text-white" href="courses.html">Cursos</a>
+                <a class="nav-link text-white" href="contact.html">Contacto</a>
+                <a class="nav-link text-white" href="registration.html">Inscripción</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido de Inscripción -->
+    <main class="container my-5" data-aos="fade-up">
+        <section id="registration" class="registration">
+            <h2 class="text-center">Formulario de Inscripción</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName">Nombre</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Tu correo electrónico" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputCourse">Curso de Interés</label>
+                    <select id="inputCourse" class="form-control" required>
+                        <option selected>Selecciona el curso...</option>
+                        <option>Curso Básico</option>
+                        <option>Curso Avanzado</option>
+                        <option>Curso de Conversación</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inputMessage">Mensaje Adicional</label>
+                    <textarea class="form-control" id="inputMessage" rows="4" placeholder="Escribe aquí cualquier mensaje adicional"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Enviar Inscripción</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-success text-white text-center py-3" data-aos="fade-up">
+        <p>&copy; 2024 Yotsuba. Todos los derechos reservados.</p>
+        <div class="d-flex justify-content-center">
+            <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
